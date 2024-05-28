@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url("./Image/landscape_comp.jpeg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#calculator {
+    font-family: Arial,sans-serif;
+    border: 1px solid rgb(109, 23, 23);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: rgb(109, 23, 23);
+    
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 77%, 26%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(0, 77%, 36%);
+}
+
+button:active {
+    background-color: hsl(0, 77%, 46%);
+}
+
+.operator-btn {
+    background-color: hsl(0, 0%, 0%);
+}
+
+.operator-btn:hover{
+    background-color: hsl(0, 0%, 5%);
+}
+
+.operator-btn:active {
+    background-color: hsl(0, 0%, 10%);
+}
+
